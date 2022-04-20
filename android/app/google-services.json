@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "486696682288",
+    "project_id": "panni-50703",
+    "storage_bucket": "panni-50703.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486696682288:android:ff9a1567e33dce294dfef5",
+        "android_client_info": {
+          "package_name": "com.example.panni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486696682288-irn10l53m19stm4vijjmg9kscc0u5iid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.panni",
+            "certificate_hash": "900d7854ba4482416e9691c00a4e2bac42a8bfd4"
+          }
+        },
+        {
+          "client_id": "486696682288-mceka85ee8c49b6oh75iq0550vsda0io.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkOZHg2az54QCElStIuZ2KH72koNIpogg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486696682288-mceka85ee8c49b6oh75iq0550vsda0io.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
