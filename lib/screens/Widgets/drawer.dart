@@ -124,35 +124,35 @@ class _MyDrawerState extends State<MyDrawer> {
         Divider(
           color: Color.fromARGB(255, 178, 206, 230),
         ),
-        InkWell(
-          onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Cart()));
-          },
-          child: ListTile(
-            title: Text("Notofications",
-                style: TextStyle(color: Color(0xFFF0f5e9c), fontSize: 16)),
-            leading:
-                Icon(Icons.notifications, color: Color(0xFFF0f5e9c), size: 30),
-          ),
-        ),
-        Divider(
-          color: Color.fromARGB(255, 178, 206, 230),
-        ),
-        InkWell(
-          onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Cart()));
-          },
-          child: ListTile(
-            title: Text("Rating and Review",
-                style: TextStyle(color: Color(0xFFF0f5e9c), fontSize: 16)),
-            leading: Icon(Icons.star, color: Color(0xFFF0f5e9c), size: 30),
-          ),
-        ),
-        Divider(
-          color: Color.fromARGB(255, 178, 206, 230),
-        ),
+        // InkWell(
+        //   onTap: () {
+        //     Navigator.push(
+        //         context, MaterialPageRoute(builder: (context) => Cart()));
+        //   },
+        //   child: ListTile(
+        //     title: Text("Notofications",
+        //         style: TextStyle(color: Color(0xFFF0f5e9c), fontSize: 16)),
+        //     leading:
+        //         Icon(Icons.notifications, color: Color(0xFFF0f5e9c), size: 30),
+        //   ),
+        // ),
+        // Divider(
+        //   color: Color.fromARGB(255, 178, 206, 230),
+        // ),
+        // InkWell(
+        //   onTap: () {
+        //     Navigator.push(
+        //         context, MaterialPageRoute(builder: (context) => Cart()));
+        //   },
+        //   child: ListTile(
+        //     title: Text("Rating and Review",
+        //         style: TextStyle(color: Color(0xFFF0f5e9c), fontSize: 16)),
+        //     leading: Icon(Icons.star, color: Color(0xFFF0f5e9c), size: 30),
+        //   ),
+        // ),
+        // Divider(
+        //   color: Color.fromARGB(255, 178, 206, 230),
+        // ),
         InkWell(
           onTap: () {
             Navigator.push(
@@ -167,36 +167,36 @@ class _MyDrawerState extends State<MyDrawer> {
         Divider(
           color: Color.fromARGB(255, 178, 206, 230),
         ),
-        InkWell(
-          onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Cart()));
-          },
-          child: ListTile(
-            title: Text("Raise a Complain",
-                style: TextStyle(color: Color(0xFFF0f5e9c), fontSize: 16)),
-            leading:
-                Icon(Icons.note_sharp, color: Color(0xFFF0f5e9c), size: 30),
-          ),
-        ),
-        Divider(
-          color: Color.fromARGB(255, 178, 206, 230),
-        ),
-        InkWell(
-          onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Cart()));
-          },
-          child: ListTile(
-            title: Text("FAQ's",
-                style: TextStyle(color: Color(0xFFF0f5e9c), fontSize: 16)),
-            leading: Icon(Icons.question_answer,
-                color: Color(0xFFF0f5e9c), size: 30),
-          ),
-        ),
-        Divider(
-          color: Color.fromARGB(255, 178, 206, 230),
-        ),
+        // InkWell(
+        //   onTap: () {
+        //     Navigator.push(
+        //         context, MaterialPageRoute(builder: (context) => Cart()));
+        //   },
+        //   child: ListTile(
+        //     title: Text("Raise a Complain",
+        //         style: TextStyle(color: Color(0xFFF0f5e9c), fontSize: 16)),
+        //     leading:
+        //         Icon(Icons.note_sharp, color: Color(0xFFF0f5e9c), size: 30),
+        //   ),
+        // ),
+        // Divider(
+        //   color: Color.fromARGB(255, 178, 206, 230),
+        // ),
+        // InkWell(
+        //   onTap: () {
+        //     Navigator.push(
+        //         context, MaterialPageRoute(builder: (context) => Cart()));
+        //   },
+        //   child: ListTile(
+        //     title: Text("FAQ's",
+        //         style: TextStyle(color: Color(0xFFF0f5e9c), fontSize: 16)),
+        //     leading: Icon(Icons.question_answer,
+        //         color: Color(0xFFF0f5e9c), size: 30),
+        //   ),
+        // ),
+        // Divider(
+        //   color: Color.fromARGB(255, 178, 206, 230),
+        // ),
         Center(
           child: Text("Contact Support",
               style: TextStyle(color: Color(0xFFF0f5e9c), fontSize: 20)),

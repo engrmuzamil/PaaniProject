@@ -5,6 +5,8 @@ import 'package:panni/Account/signout.dart';
 import 'package:panni/models/usermodel.dart';
 import 'package:panni/screens/Widgets/appbar.dart';
 import 'package:panni/screens/Widgets/drawer.dart';
+import 'package:panni/screens/deliveryAddresses.dart';
+import 'package:panni/screens/myOrders.dart';
 
 class Profile extends StatefulWidget {
   final UserModel userData;
@@ -126,59 +128,27 @@ class _ProfileState extends State<Profile> {
                           thickness: 1,
                           color: const Color(0xFFF0f5e9c),
                         ),
-                        const ListTile(
-                          leading: const Icon(Icons.shopping_bag_outlined,
-                              color: const Color(0xFFF0f5e9c)),
-                          title: const Text(
-                            "My Orders",
-                            style: TextStyle(
-                                color: Color(0xFFF0f5e9c),
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          trailing: Icon(
-                            Icons.arrow_forward_ios,
-                            color: const Color(0xFFF0f5e9c),
-                          ),
-                        ),
-                        const Divider(
-                          height: 1,
-                          thickness: 1,
-                          color: Color(0xFFF0f5e9c),
-                        ),
-                        const ListTile(
-                          leading: const Icon(Icons.location_on_outlined,
-                              color: Color(0xFFF0f5e9c)),
-                          title: Text(
-                            "My Delivery Address",
-                            style: TextStyle(
-                                color: const Color(0xFFF0f5e9c),
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          trailing: const Icon(
-                            Icons.arrow_forward_ios,
-                            color: Color(0xFFF0f5e9c),
-                          ),
-                        ),
-                        const Divider(
-                          height: 1,
-                          thickness: 1,
-                          color: const Color(0xFFF0f5e9c),
-                        ),
-                        const ListTile(
-                          leading: const Icon(Icons.person_outline,
-                              color: const Color(0xFFF0f5e9c)),
-                          title: const Text(
-                            "Refer A Friend",
-                            style: TextStyle(
-                                color: Color(0xFFF0f5e9c),
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          trailing: const Icon(
-                            Icons.arrow_forward_ios,
-                            color: const Color(0xFFF0f5e9c),
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MyOrders()));
+                          },
+                          child: const ListTile(
+                            leading: const Icon(Icons.shopping_bag_outlined,
+                                color: const Color(0xFFF0f5e9c)),
+                            title: const Text(
+                              "My Orders",
+                              style: TextStyle(
+                                  color: Color(0xFFF0f5e9c),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            trailing: Icon(
+                              Icons.arrow_forward_ios,
+                              color: const Color(0xFFF0f5e9c),
+                            ),
                           ),
                         ),
                         const Divider(
@@ -186,61 +156,109 @@ class _ProfileState extends State<Profile> {
                           thickness: 1,
                           color: Color(0xFFF0f5e9c),
                         ),
-                        const ListTile(
-                          leading: const Icon(Icons.file_copy_outlined,
-                              color: Color(0xFFF0f5e9c)),
-                          title: Text(
-                            "Terms And Conditions",
-                            style: const TextStyle(
-                                color: const Color(0xFFF0f5e9c),
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          trailing: const Icon(
-                            Icons.arrow_forward_ios,
-                            color: Color(0xFFF0f5e9c),
-                          ),
-                        ),
-                        const Divider(
-                          height: 1,
-                          thickness: 1,
-                          color: Color(0xFFF0f5e9c),
-                        ),
-                        const ListTile(
-                          leading: const Icon(Icons.privacy_tip_outlined,
-                              color: const Color(0xFFF0f5e9c)),
-                          title: const Text(
-                            "Privacy Policy",
-                            style: TextStyle(
-                                color: Color(0xFFF0f5e9c),
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          trailing: const Icon(
-                            Icons.arrow_forward_ios,
-                            color: const Color(0xFFF0f5e9c),
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => DeliveryAddresses()));
+                          },
+                          child: const ListTile(
+                            leading: const Icon(Icons.location_on_outlined,
+                                color: Color(0xFFF0f5e9c)),
+                            title: Text(
+                              "My Delivery Address",
+                              style: TextStyle(
+                                  color: const Color(0xFFF0f5e9c),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            trailing: const Icon(
+                              Icons.arrow_forward_ios,
+                              color: Color(0xFFF0f5e9c),
+                            ),
                           ),
                         ),
-                        const Divider(
-                          height: 1,
-                          thickness: 1,
-                          color: const Color(0xFFF0f5e9c),
-                        ),
-                        const ListTile(
-                          leading:
-                              Icon(Icons.add_chart, color: Color(0xFFF0f5e9c)),
-                          title: Text(
-                            "About",
-                            style: TextStyle(
-                                color: const Color(0xFFF0f5e9c),
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          trailing: Icon(
-                            Icons.arrow_forward_ios,
-                            color: Color(0xFFF0f5e9c),
-                          ),
-                        ),
+                        // const Divider(
+                        //   height: 1,
+                        //   thickness: 1,
+                        //   color: const Color(0xFFF0f5e9c),
+                        // ),
+                        // const ListTile(
+                        //   leading: const Icon(Icons.person_outline,
+                        //       color: const Color(0xFFF0f5e9c)),
+                        //   title: const Text(
+                        //     "Refer A Friend",
+                        //     style: TextStyle(
+                        //         color: Color(0xFFF0f5e9c),
+                        //         fontSize: 16,
+                        //         fontWeight: FontWeight.bold),
+                        //   ),
+                        //   trailing: const Icon(
+                        //     Icons.arrow_forward_ios,
+                        //     color: const Color(0xFFF0f5e9c),
+                        //   ),
+                        // ),
+                        // const Divider(
+                        //   height: 1,
+                        //   thickness: 1,
+                        //   color: Color(0xFFF0f5e9c),
+                        // ),
+                        // const ListTile(
+                        //   leading: const Icon(Icons.file_copy_outlined,
+                        //       color: Color(0xFFF0f5e9c)),
+                        //   title: Text(
+                        //     "Terms And Conditions",
+                        //     style: const TextStyle(
+                        //         color: const Color(0xFFF0f5e9c),
+                        //         fontSize: 16,
+                        //         fontWeight: FontWeight.bold),
+                        //   ),
+                        //   trailing: const Icon(
+                        //     Icons.arrow_forward_ios,
+                        //     color: Color(0xFFF0f5e9c),
+                        //   ),
+                        // ),
+                        // const Divider(
+                        //   height: 1,
+                        //   thickness: 1,
+                        //   color: Color(0xFFF0f5e9c),
+                        // ),
+                        // const ListTile(
+                        //   leading: const Icon(Icons.privacy_tip_outlined,
+                        //       color: const Color(0xFFF0f5e9c)),
+                        //   title: const Text(
+                        //     "Privacy Policy",
+                        //     style: TextStyle(
+                        //         color: Color(0xFFF0f5e9c),
+                        //         fontSize: 16,
+                        //         fontWeight: FontWeight.bold),
+                        //   ),
+                        //   trailing: const Icon(
+                        //     Icons.arrow_forward_ios,
+                        //     color: const Color(0xFFF0f5e9c),
+                        //   ),
+                        // ),
+                        // const Divider(
+                        //   height: 1,
+                        //   thickness: 1,
+                        //   color: const Color(0xFFF0f5e9c),
+                        // ),
+                        // const ListTile(
+                        //   leading:
+                        //       Icon(Icons.add_chart, color: Color(0xFFF0f5e9c)),
+                        //   title: Text(
+                        //     "About",
+                        //     style: TextStyle(
+                        //         color: const Color(0xFFF0f5e9c),
+                        //         fontSize: 16,
+                        //         fontWeight: FontWeight.bold),
+                        //   ),
+                        //   trailing: Icon(
+                        //     Icons.arrow_forward_ios,
+                        //     color: Color(0xFFF0f5e9c),
+                        //   ),
+                        // ),
                         const Divider(
                           height: 1,
                           thickness: 1,
